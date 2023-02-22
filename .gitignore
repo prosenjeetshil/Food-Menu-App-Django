@@ -1,0 +1,4 @@
+/myproject/.env
+/myproject/myproject/__Pycache__/
+/myproject/foodapp/__Pycache__/
+/myproject/foodapp/migrations/__Pycache__/
