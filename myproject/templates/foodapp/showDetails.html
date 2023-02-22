@@ -1,0 +1,16 @@
+{% extends 'layout.html' %} 
+{% block title %}
+<title>Menu Items</title>
+{% endblock %}
+
+
+{% block contents %}
+{% for i in obj %}
+<div class="container">
+    <h1>{{i.fname}}</h1>
+    <h1>{{i.fdesc}}</h1>
+    <h1>{{i.fprice}}</h1>
+    <img src="{{i.fimg}}" height="300">
+</div>
+{% endfor %}
+{% endblock %}
