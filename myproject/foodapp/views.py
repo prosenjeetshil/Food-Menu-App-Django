@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-
+from .models import Food
 from .forms import FoodForm
 
 # Create your views here.
@@ -14,3 +14,8 @@ def addFoodView(request):
     context = {'form': form}
     return render(request, template_name, context)
 
+def showDetailsView(request):
+    obj = Food.objects.all()
+    template_name = 'foodapp/showDetails.html'
+    context = {'obj': obj}
+    return render(request, template_name, context)
