@@ -16,7 +16,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Food App</a>
+      <a class="navbar-brand" href="{% url 'show' %}">Food App</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -30,11 +30,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"
+          <a class="nav-item nav-link active" href="{% url 'show' %}"
             >MENU<span class="sr-only">(current)</span></a
           >
           <a class="nav-item nav-link active" href="{% url 'add' %}"
             >Add items</a
+          >
+          <a class="nav-item nav-link active" href="{% url 'edit' %}"
+            >Edit items</a
           >
           <!-- <a class="nav-item nav-link" href="#">Pricing</a>
           <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
